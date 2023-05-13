@@ -5,7 +5,7 @@ soma_trancadas = 0
 for i in range(num_trancadas):
   sem_trancadas = int(input(f"semestre da {i+1}ª disciplinas trancada: "))
   carga_horaria_trancadas = int(input(f"carga horária da {i+1}ª disciplina trancada: "))
-
+  
   soma_trancadas += (sem_trancadas*carga_horaria_trancadas)  
 
 print("sobre as disciplinas:\n")
@@ -26,6 +26,4 @@ for i in range(n):
 
 ira = (1 - (0.5 * carga_horaria_trancadas) / C) * (nota_final / (parcial - soma_trancadas)) * 1000
 
-print(parcial)
-print(soma_trancadas)
-print(ira)
+print("o ira individual do estudante é: ", ira)
